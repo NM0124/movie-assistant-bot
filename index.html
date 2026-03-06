@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-
 <script>
   window.watsonAssistantChatOptions = {
     integrationID: "0a5ac97e-a218-4d23-9c08-cdad96765892", // The ID of this integration.
@@ -21,8 +20,8 @@
     t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
     document.head.appendChild(t);
   });
+  
 </script>
-
   <nav>
     <div class="nav-logo">Cinema</div>
     <a href="#movies" class="nav-top-btn">Top Picks</a>
@@ -175,6 +174,101 @@
       </div>
 
       <div class="movie-card" data-genre="Sci-Fi">
+        <div class="rating-badge">★ 8.6</div>
+        <img src="https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg" alt="Interstellar" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="card-strip">
+          <div class="title">Interstellar</div>
+          <div class="year">2014</div>
+        </div>
+        <div class="card-overlay">
+          <div class="overlay-genre">Sci-Fi</div>
+          <div class="overlay-title">Interstellar</div>
+          <div class="overlay-meta">dir. Christopher Nolan · 2h 49m</div>
+          <div class="overlay-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            8.6 / 10
+          </div>
+          <div class="overlay-desc">A team of explorers travel through a wormhole in space to ensure humanity's survival.</div>
+        </div>
+      </div>
+
+      <div class="movie-card" data-genre="Drama">
+        <div class="rating-badge">★ 8.4</div>
+        <img src="https://image.tmdb.org/t/p/w500/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg" alt="Forrest Gump" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="card-strip">
+          <div class="title">Forrest Gump</div>
+          <div class="year">1994</div>
+        </div>
+        <div class="card-overlay">
+          <div class="overlay-genre">Drama</div>
+          <div class="overlay-title">Forrest Gump</div>
+          <div class="overlay-meta">dir. Robert Zemeckis · 2h 22m</div>
+          <div class="overlay-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            8.4 / 10
+          </div>
+          <div class="overlay-desc">The presidencies of Kennedy through Bush through the eyes of an Alabama man with an extraordinary life.</div>
+        </div>
+      </div>
+
+      <div class="movie-card" data-genre="Sci-Fi">
+        <div class="rating-badge">★ 8.1</div>
+        <img src="https://image.tmdb.org/t/p/w500/qvktm0BHcnmDpul4Hz01GIazWPr.jpg" alt="The Terminator" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="card-strip">
+          <div class="title">The Terminator</div>
+          <div class="year">1984</div>
+        </div>
+        <div class="card-overlay">
+          <div class="overlay-genre">Sci-Fi</div>
+          <div class="overlay-title">The Terminator</div>
+          <div class="overlay-meta">dir. James Cameron · 1h 47m</div>
+          <div class="overlay-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            8.1 / 10
+          </div>
+          <div class="overlay-desc">A cyborg assassin is sent back in time to kill the mother of the future resistance leader.</div>
+        </div>
+      </div>
+
+      <div class="movie-card" data-genre="Sci-Fi">
+        <div class="rating-badge">★ 8.5</div>
+        <img src="https://image.tmdb.org/t/p/w500/fNOH9f1aA7XRTzl1sAOx9iF553Q.jpg" alt="Back to the Future" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="card-strip">
+          <div class="title">Back to the Future</div>
+          <div class="year">1985</div>
+        </div>
+        <div class="card-overlay">
+          <div class="overlay-genre">Sci-Fi</div>
+          <div class="overlay-title">Back to the Future</div>
+          <div class="overlay-meta">dir. Robert Zemeckis · 1h 56m</div>
+          <div class="overlay-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            8.5 / 10
+          </div>
+          <div class="overlay-desc">A teenager is accidentally sent back to 1955 in a time-travelling DeLorean and must ensure his parents fall in love.</div>
+        </div>
+      </div>
+
+      <div class="movie-card" data-genre="Thriller">
+        <div class="rating-badge">★ 8.5</div>
+        <img src="https://www.themoviedb.org/t/p/w1280/7fn624j5lj3xTme2SgiLCeuedmO.jpg" alt="Whiplash" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="card-strip">
+          <div class="title">Whiplash</div>
+          <div class="year">2014</div>
+        </div>
+        <div class="card-overlay">
+          <div class="overlay-genre">Thriller</div>
+          <div class="overlay-title">Whiplash</div>
+          <div class="overlay-meta">dir. Damien Chazelle · 1h 46m</div>
+          <div class="overlay-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            8.5 / 10
+          </div>
+          <div class="overlay-desc">A young drummer enrolls at a cut-throat music conservatory where his teacher will stop at nothing.</div>
+        </div>
+      </div>
+
+      <div class="movie-card" data-genre="Sci-Fi">
         <div class="rating-badge">★ 8.1</div>
         <img src="https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg" alt="Blade Runner 2049" loading="lazy" onerror="this.style.display='none'"/>
         <div class="card-strip">
@@ -274,7 +368,7 @@
         <img src="https://www.themoviedb.org/t/p/w1280/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg" alt="Up" loading="lazy" onerror="this.style.display='none'"/>
         <div class="card-strip">
           <div class="title">Up</div>
-          <div class="year">2009</div>
+            <div class="year">2009</div>
         </div>
         <div class="card-overlay">
           <div class="overlay-genre">Animation</div>
@@ -325,13 +419,12 @@
           <div class="overlay-desc">A Roman general becomes a slave, then a gladiator, as he fights for justice against the emperor who murdered his family.</div>
         </div>
       </div>
-
     </div>
   </section>
 
   <footer>
     <div class="footer-logo">CINEMA</div>
-    <div class="footer-text">© 2024 — All rights reserved. Film data sourced for display purposes.</div>
+    <div class="footer-text">Film Data Sourced For Display Purposes.</div>
   </footer>
 
   <script src="script.js"></script>
