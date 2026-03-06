@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CINEMA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "0a5ac97e-a218-4d23-9c08-cdad96765892", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "a2f6af10-f9a5-4049-9336-ad188bd3b370", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+  <nav>
+    <div class="nav-logo">Cinema</div>
+    <a href="#movies" class="nav-top-btn">Top Picks</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="ring"></div>
+    <div class="ring"></div>
+    <div class="ring"></div>
+    <div class="hero-content">
+      <div class="hero-tag">🎬 &nbsp; Your Ultimate Movie Destination</div>
+      <h1 class="hero-title">
+        <span class="line1">THE</span>
+        <span class="line2">CINEMA</span>
+      </h1>
+      <p class="hero-subtitle">Explore thousands of films — from timeless classics to today's biggest blockbusters. Every story begins with a single frame.</p>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-val">10K+</div>
+          <div class="stat-lab">Films</div>
+        </div>
+        <div>
+          <div class="stat-val">150+</div>
+          <div class="stat-lab">Countries</div>
+        </div>
+        <div>
+          <div class="stat-val">100</div>
+          <div class="stat-lab">Years of Cinema</div>
+        </div>
+      </div>
+      <a href="#movies" class="hero-btn">Explore Films</a>
+    </div>
+    <div class="scroll-hint">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+      Scroll
+    </div>
+  </section>
+
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      <div class="marquee-item">DRAMA <span>✦</span> SCI-FI <span>✦</span> THRILLER <span>✦</span> CRIME <span>✦</span> ANIMATION <span>✦</span> COMEDY <span>✦</span> HORROR <span>✦</span> ROMANCE <span>✦</span> ACTION <span>✦</span> FANTASY <span>✦</span> MYSTERY <span>✦</span> DOCUMENTARY</div>
+      <div class="marquee-item">DRAMA <span>✦</span> SCI-FI <span>✦</span> THRILLER <span>✦</span> CRIME <span>✦</span> ANIMATION <span>✦</span> COMEDY <span>✦</span> HORROR <span>✦</span> ROMANCE <span>✦</span> ACTION <span>✦</span> FANTASY <span>✦</span> MYSTERY <span>✦</span> DOCUMENTARY</div>
+    </div>
+  </div>
+
+  <section id="movies">
+    <div class="section-head">
+      <h2>TOP <span>PICKS</span></h2>
+      <p class="section-desc">A curated selection of cinema's finest — rated, loved, and remembered forever.</p>
+    </div>
+
+    <div class="movies-grid" id="moviesGrid">
+
+      <div class="movie-card" data-genre="Crime">
+        <div class="rating-badge">★ 9.2</div>
+        <img src="https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_FMjpg_UY1982_.jpg" alt="The Godfather" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="card-strip">
+          <div class="title">The Godfather</div>
+          <div class="year">1972</div>
+        </div>
+        <div class="card-overlay">
+          <div class="overlay-genre">Crime</div>
+          <div class="overlay-title">The Godfather</div>
+          <div class="overlay-meta">dir. Francis Ford Coppola · 2h 55m</div>
+          <div class="overlay-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            9.2 / 10
+          </div>
+          <div class="overlay-desc">An aging patriarch transfers control of his empire to his reluctant son.</div>
+        </div>
+      </div>
+
+      <div class="movie-card" data-genre="Crime">
+        <div class="rating-badge">★ 9.0</div>
+        <img src="https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg" alt="The Dark Knight" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="card-strip">
+          <div class="title">The Dark Knight</div>
+          <div class="year">2008</div>
+        </div>
+        <div class="card-overlay">
+          <div class="overlay-genre">Crime</div>
+          <div class="overlay-title">The Dark Knight</div>
+          <div class="overlay-meta">dir. Christopher Nolan · 2h 32m</div>
+          <div class="overlay-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            9.0 / 10
+          </div>
+          <div class="overlay-desc">Batman faces the Joker, a criminal mastermind who plunges Gotham into anarchy.</div>
+        </div>
+      </div>
+
+      <div class="movie-card" data-genre="Drama">
+        <div class="rating-badge">★ 9.3</div>
+        <img src="https://www.themoviedb.org/t/p/w1280/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg" alt="The Shawshank Redemption" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="card-strip">
+          <div class="title">The Shawshank Redemption</div>
+          <div class="year">1994</div>
+        </div>
+        <div class="card-overlay">
+          <div class="overlay-genre">Drama</div>
+          <div class="overlay-title">Shawshank Redemption</div>
+          <div class="overlay-meta">dir. Frank Darabont · 2h 22m</div>
+          <div class="overlay-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            9.3 / 10
+          </div>
+          <div class="overlay-desc">Two imprisoned men bond over years, finding solace and eventual redemption.</div>
+        </div>
+      </div>
+
+      <div class="movie-card" data-genre="Thriller">
+        <div class="rating-badge">★ 8.5</div>
+        <img src="https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" alt="Parasite" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="card-strip">
+          <div class="title">Parasite</div>
+          <div class="year">2019</div>
+        </div>
+        <div class="card-overlay">
+          <div class="overlay-genre">Thriller</div>
+          <div class="overlay-title">Parasite</div>
+          <div class="overlay-meta">dir. Bong Joon-ho · 2h 12m</div>
+          <div class="overlay-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            8.5 / 10
+          </div>
+          <div class="overlay-desc">Greed and class discrimination threaten a symbiotic relationship between two families.</div>
+        </div>
+      </div>
+
+      <div class="movie-card" data-genre="Sci-Fi">
+        <div class="rating-badge">★ 8.8</div>
+        <img src="https://image.tmdb.org/t/p/w500/ljsZTbVsrQSqZgWeep2B1QiDKuh.jpg" alt="Inception" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="card-strip">
+          <div class="title">Inception</div>
+          <div class="year">2010</div>
+        </div>
+        <div class="card-overlay">
+          <div class="overlay-genre">Sci-Fi</div>
+          <div class="overlay-title">Inception</div>
+          <div class="overlay-meta">dir. Christopher Nolan · 2h 28m</div>
+          <div class="overlay-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            8.8 / 10
+          </div>
+          <div class="overlay-desc">A thief who steals corporate secrets through dream-sharing technology is given an inverse task.</div>
+        </div>
+      </div>
+
+      <div class="movie-card" data-genre="Sci-Fi">
+        <div class="rating-badge">★ 8.1</div>
+        <img src="https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg" alt="Blade Runner 2049" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="card-strip">
+          <div class="title">Blade Runner 2049</div>
+          <div class="year">2017</div>
+        </div>
+        <div class="card-overlay">
+          <div class="overlay-genre">Sci-Fi</div>
+          <div class="overlay-title">Blade Runner 2049</div>
+          <div class="overlay-meta">dir. Denis Villeneuve · 2h 44m</div>
+          <div class="overlay-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            8.1 / 10
+          </div>
+          <div class="overlay-desc">A young blade runner discovers a long-buried secret that could plunge society into chaos.</div>
+        </div>
+      </div>
+
+      <div class="movie-card" data-genre="Animation">
+        <div class="rating-badge">★ 8.8</div>
+        <img src="https://image.tmdb.org/t/p/w500/sKCr78MXSLixwmZ8DyJLrpMsd15.jpg" alt="The Lion King" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="card-strip">
+          <div class="title">The Lion King</div>
+          <div class="year">1994</div>
+        </div>
+        <div class="card-overlay">
+          <div class="overlay-genre">Animation</div>
+          <div class="overlay-title">The Lion King</div>
+          <div class="overlay-meta">dir. Roger Allers · 1h 28m</div>
+          <div class="overlay-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            8.8 / 10
+          </div>
+          <div class="overlay-desc">A young lion prince flees his kingdom after the murder of his father, only to learn the true meaning of responsibility.</div>
+        </div>
+      </div>
+
+      <div class="movie-card" data-genre="Thriller">
+        <div class="rating-badge">★ 8.3</div>
+        <img src="https://image.tmdb.org/t/p/w500/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg" alt="The Silence of the Lambs" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="card-strip">
+          <div class="title">Silence of the Lambs</div>
+          <div class="year">1991</div>
+        </div>
+        <div class="card-overlay">
+          <div class="overlay-genre">Thriller</div>
+          <div class="overlay-title">Silence of the Lambs</div>
+          <div class="overlay-meta">dir. Jonathan Demme · 1h 58m</div>
+          <div class="overlay-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            8.3 / 10
+          </div>
+          <div class="overlay-desc">An FBI trainee seeks the help of an imprisoned cannibal killer to catch another serial killer.</div>
+        </div>
+      </div>
+
+      <div class="movie-card" data-genre="Drama">
+        <div class="rating-badge">★ 8.6</div>
+        <img src="https://image.tmdb.org/t/p/w500/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg" alt="Schindler's List" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="card-strip">
+          <div class="title">Schindler's List</div>
+          <div class="year">1993</div>
+        </div>
+        <div class="card-overlay">
+          <div class="overlay-genre">Drama</div>
+          <div class="overlay-title">Schindler's List</div>
+          <div class="overlay-meta">dir. Steven Spielberg · 3h 15m</div>
+          <div class="overlay-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            8.6 / 10
+          </div>
+          <div class="overlay-desc">A businessman saves over a thousand Polish Jews from the Holocaust by employing them in his factories.</div>
+        </div>
+      </div>
+
+      <div class="movie-card" data-genre="Crime">
+        <div class="rating-badge">★ 8.4</div>
+        <img src="https://www.themoviedb.org/t/p/w1280/9OkCLM73MIU2CrKZbqiT8Ln1wY2.jpg" alt="Goodfellas" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="card-strip">
+          <div class="title">Goodfellas</div>
+          <div class="year">1990</div>
+        </div>
+        <div class="card-overlay">
+          <div class="overlay-genre">Crime</div>
+          <div class="overlay-title">Goodfellas</div>
+          <div class="overlay-meta">dir. Martin Scorsese · 2h 26m</div>
+          <div class="overlay-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            8.4 / 10
+          </div>
+          <div class="overlay-desc">The story of Henry Hill and his life in the mob from childhood to becoming an FBI informant.</div>
+        </div>
+      </div>
+
+      <div class="movie-card" data-genre="Animation">
+        <div class="rating-badge">★ 8.3</div>
+        <img src="https://www.themoviedb.org/t/p/w1280/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg" alt="Up" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="card-strip">
+          <div class="title">Up</div>
+          <div class="year">2009</div>
+        </div>
+        <div class="card-overlay">
+          <div class="overlay-genre">Animation</div>
+          <div class="overlay-title">Up</div>
+          <div class="overlay-meta">dir. Pete Docter · 1h 36m</div>
+          <div class="overlay-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            8.3 / 10
+          </div>
+          <div class="overlay-desc">A 78-year-old man fulfils his lifelong dream by tying thousands of balloons to his house and flying to South America.</div>
+        </div>
+      </div>
+
+      <div class="movie-card" data-genre="Sci-Fi">
+        <div class="rating-badge">★ 8.3</div>
+        <img src="https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg" alt="The Matrix" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="card-strip">
+          <div class="title">The Matrix</div>
+          <div class="year">1999</div>
+        </div>
+        <div class="card-overlay">
+          <div class="overlay-genre">Sci-Fi</div>
+          <div class="overlay-title">The Matrix</div>
+          <div class="overlay-meta">dir. The Wachowskis · 2h 16m</div>
+          <div class="overlay-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            8.3 / 10
+          </div>
+          <div class="overlay-desc">A hacker discovers that reality as he knows it is a simulation and joins a rebellion against its machine controllers.</div>
+        </div>
+      </div>
+
+      <div class="movie-card" data-genre="Action">
+        <div class="rating-badge">★ 8.5</div>
+        <img src="https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg" alt="Gladiator" loading="lazy" onerror="this.style.display='none'"/>
+        <div class="card-strip">
+          <div class="title">Gladiator</div>
+          <div class="year">2000</div>
+        </div>
+        <div class="card-overlay">
+          <div class="overlay-genre">Action</div>
+          <div class="overlay-title">Gladiator</div>
+          <div class="overlay-meta">dir. Ridley Scott · 2h 35m</div>
+          <div class="overlay-rating">
+            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            8.5 / 10
+          </div>
+          <div class="overlay-desc">A Roman general becomes a slave, then a gladiator, as he fights for justice against the emperor who murdered his family.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">CINEMA</div>
+    <div class="footer-text">© 2024 — All rights reserved. Film data sourced for display purposes.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
